@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is pokedex</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        input{
+            width: 300px;
+        }
+        body{
+            background-color: black;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            margin-bottom: 35px;
+        }
+        #logo{
+            width: 450px;
+        }
+        #pokedex{
+            background-color: black;
+            background-image: url(../static/resources/pdeximg.PNG);
+            justify-content: center;
+            background-repeat:no-repeat;
+            background-size: 950px 450px;
+            background-position: center center;
+            height: 450px;
+            width: 1215px;
+            display: flex;
+            margin-bottom: 25px;
+        }
+        .pokeimg{
+            height: 500px;
+            width: 500px;
+        }
+        button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 3px #999;
+        }
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 2px #666;
+            transform: translateY(4px);
+}
+        #form{
+            display: flex;
+            justify-content: center;
+            color: red;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+        #options{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <body>
+        <header>
+            <img id="logo" src="https://fontmeme.com/permalink/211204/40079a940c0038a6393c571acd8286d9.png" alt="logo">
+        </header>
+        <div id="usingtxt" style="display: flex; justify-content: center; padding: 20px;">
+            <input id="name" type="text">
+            <a href="#pokedex"><button id="btnbtn" type="button" class="btn btn-warning">Get Details</button></a>
+        </div>
+
+
+
+        <div style="display: flex; justify-content: center; padding: 20px;">
+            <form id="myForm" action="/upload" method="post">
+                <input id="upload" type="file">
+                <a href="#pokedex"><button id="submit-btn" style="width: 100px;" class="btn btn-warning" type="submit">UPLOAD</button></a>
+            </form>
+        </div>
+    </div>
+        <div id="pokedex">
+        </div>
+
+
+        <div id="options">
+            <button id="WEAKNESS" class="btn btn-warning">WEAKNESS</button>
+            <button id="TYPE" class="btn btn-warning">TYPE</button>
+        </div>
+        
+        <script src="../static/logic.js"></script>
+    </body>
+</body>
+</html>
